@@ -347,9 +347,10 @@ class BaseChargebeeStream(BaseStream):
                             if item:
                                 if item.get(bookmark_key) is not None:
                                     try:
+                                        # added ignoretz to fix the issue: can't compare offset-naive and offset-aware datetimes
                                         max_date = max(
                                             max_date,
-                                            parse(item.get(bookmark_key))
+                                            parse(item.get(bookmark_key), ignoretz=True)
                                         )
                                     except TypeError:
                                         max_date = max(
