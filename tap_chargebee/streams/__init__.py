@@ -39,7 +39,8 @@ AVAILABLE_STREAMS = [
     TransactionsStream,
     VirtualBankAccountsStream,
     UnbilledChargesStream,
-    InvoicedUnbilledChargesStream,
+    # Disabled to fix the issue: Server4xxError: This endpoint is not supported for your site
+    # InvoicedUnbilledChargesStream,
     BusinessEntitiesStream,
     UsagesStream
 ]
