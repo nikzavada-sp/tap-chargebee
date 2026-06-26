@@ -58,7 +58,8 @@ AVAILABLE_STREAMS_2_0_ONLY = [
     # RampsStream,
     # Disabled to fix the issue: tap_chargebee.client.Server4xxError: This API operation is not enabled for this site. Please contact support@chargebee.com to get this enabled
     # ItemBillingMetricsStream,
-    ExchangeRatesStream
+    # Disabled to fix the issue: WARNING HTTP 404 error at https://simplepractice.chargebee.com/api/v2/currencies/get_auto_exchange_rates: Sorry, we couldn't find that page. ERROR Sorry, we couldn't find that page
+    # ExchangeRatesStream
 ]
 
 AVAILABLE_STREAMS_1_0 = AVAILABLE_STREAMS + AVAILABLE_STREAMS_1_0_ONLY
