@@ -355,7 +355,7 @@ class BaseChargebeeStream(BaseStream):
                                     except TypeError:
                                         max_date = max(
                                             max_date,
-                                            datetime.fromtimestamp(item.get(bookmark_key), tz=dtz.gettz('UTC')
+                                            datetime.fromtimestamp(int(item.get(bookmark_key)), tz=dtz.gettz('UTC')
                                         ))
 
                 # update the state with the max date after each iteration
