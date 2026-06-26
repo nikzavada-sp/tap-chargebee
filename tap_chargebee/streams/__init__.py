@@ -54,7 +54,8 @@ AVAILABLE_STREAMS_2_0_ONLY = [
     ItemsStream,
     ItemPricesStream,
     ItemFamiliesStream,
-    PriceVariantsStream,
+    # Dissabled to fix:  This API operation is not enabled for this site.
+    # PriceVariantsStream,
     # RampsStream,
     # Disabled to fix the issue: tap_chargebee.client.Server4xxError: This API operation is not enabled for this site. Please contact support@chargebee.com to get this enabled
     # ItemBillingMetricsStream,
